@@ -1,0 +1,87 @@
+
+
+ubuntu@ip-172-31-55-42:~/AWSGPU_DeepLearning$ python net8.py
+Using gpu device 0: GRID K520 (CNMeM is enabled with initial size: 95.0% of memory, cuDNN not available)
+/usr/local/lib/python2.7/dist-packages/sklearn/cross_validation.py:44: DeprecationWarning: This module was deprecated in version 0.18 in favor of the model_selection module into which all the refactored classes and functions are moved. Also note that the interface of the new CV iterators are different from that of this module. This module will be removed in 0.20.
+  "This module will be removed in 0.20.", DeprecationWarning)
+left_eye_center_x            7039
+left_eye_center_y            7039
+right_eye_center_x           7036
+right_eye_center_y           7036
+left_eye_inner_corner_x      2271
+left_eye_inner_corner_y      2271
+left_eye_outer_corner_x      2267
+left_eye_outer_corner_y      2267
+right_eye_inner_corner_x     2268
+right_eye_inner_corner_y     2268
+right_eye_outer_corner_x     2268
+right_eye_outer_corner_y     2268
+left_eyebrow_inner_end_x     2270
+left_eyebrow_inner_end_y     2270
+left_eyebrow_outer_end_x     2225
+left_eyebrow_outer_end_y     2225
+right_eyebrow_inner_end_x    2270
+right_eyebrow_inner_end_y    2270
+right_eyebrow_outer_end_x    2236
+right_eyebrow_outer_end_y    2236
+nose_tip_x                   7049
+nose_tip_y                   7049
+mouth_left_corner_x          2269
+mouth_left_corner_y          2269
+mouth_right_corner_x         2270
+mouth_right_corner_y         2270
+mouth_center_top_lip_x       2275
+mouth_center_top_lip_y       2275
+mouth_center_bottom_lip_x    7016
+mouth_center_bottom_lip_y    7016
+Image                        7049
+dtype: int64
+# Neural Network with 16561502 learnable parameters
+
+## Layer information
+
+  #  name      size
+---  --------  ---------
+  0  input     1x96x96
+  1  conv1     32x94x94
+  2  pool1     32x47x47
+  3  dropout1  32x47x47
+  4  conv2     64x46x46
+  5  pool2     64x23x23
+  6  dropout2  64x23x23
+  7  conv3     128x22x22
+  8  pool3     128x11x11
+  9  dropout3  128x11x11
+ 10  hidden4   1000
+ 11  dropout4  1000
+ 12  hidden5   1000
+ 13  output    30
+
+  epoch    trn loss    val loss    trn/val  dur
+-------  ----------  ----------  ---------  -----
+      1     0.05955     0.03894    1.52940  8.60s
+      2     0.01435     0.02322    0.61797  8.61s
+      3     0.00972     0.01557    0.62434  8.61s
+      4     0.00796     0.01197    0.66494  8.61s
+      5     0.00738     0.00976    0.75575  8.61s
+………..
+   6705     0.00086     0.00087    0.98695  8.61s
+   6706     0.00085     0.00087    0.96904  8.61s
+   6707     0.00085     0.00088    0.96573  8.61s
+   6708     0.00086     0.00088    0.97618  8.61s
+   6709     0.00085     0.00088    0.96902  8.61s
+   6710     0.00085     0.00088    0.96561  8.61s
+   6711     0.00085     0.00088    0.97456  8.61s
+   6712     0.00086     0.00088    0.98030  8.61s
+   6713     0.00086     0.00088    0.97582  8.61s
+   6714     0.00085     0.00088    0.96411  8.61s
+   6715     0.00085     0.00088    0.97098  8.61s
+   6716     0.00087     0.00088    0.98904  8.61s
+   6717     0.00085     0.00088    0.96583  8.61s
+……….
+
+   9996     0.00074     0.00081    0.91957  8.61s
+   9997     0.00074     0.00081    0.92195  8.61s
+   9998     0.00074     0.00081    0.92202  8.61s
+   9999     0.00074     0.00081    0.92290  8.61s
+  10000     0.00075     0.00081    0.92738  8.61s
